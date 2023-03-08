@@ -1,5 +1,7 @@
 #include "main.h"
 
+int check(char *s, int start, int end, int pair);
+
 /**
  * last_index - returns the last index of a string (counts the null char)
  * @s: pointer the string
