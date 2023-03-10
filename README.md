@@ -1,2 +1,1 @@
-# alx-low_level_programming
-This repository will contain projects on alx-low_level_programming
+0x09-static_libraries
