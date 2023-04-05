@@ -3,7 +3,7 @@
 /**
 * free_listint - frees a listint_t list.
 * @head: head of a singly linked list
-* Return: void
+* Return: no return value.
 */
 
 void free_listint(listint_t *head)
