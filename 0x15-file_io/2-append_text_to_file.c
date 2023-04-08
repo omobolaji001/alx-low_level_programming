@@ -12,6 +12,7 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int wrt;
         int file_d;
+
         int i = 0;
 
         if (filename == NULL)
@@ -38,5 +39,5 @@ int append_text_to_file(const char *filename, char *text_content)
 
         close(file_d);
 
-        return (1);	
+        return (1);
 }
