@@ -49,10 +49,10 @@ int main(int argc, char *argv[])
 
 	while (rd == 1024)
 	{
-		rd = read(file_from, buf, 1024);
+		rd = read(file_from, buffer, 1024);
 		if (rd == -1)
 			error_file(-1, 0, argv);
-		wrt = write(file_to, buf, rd);
+		wrt = write(file_to, buffer, rd);
 		if (wrt == -1)
 			error_file(0, -1, argv);
 	}
