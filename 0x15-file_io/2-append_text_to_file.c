@@ -27,11 +27,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		while (text_content[i] != '\0')
-        	{
-                	wrt = write(file_d, text_content, 1);
-                	i++;
-        	}
+		for (i = 0; text_content[i]; i++)
+			;
+        	
+		wrt = write(file_d, text_content, i);
 
         	if (wrt == -1)
                 	return (-1);
