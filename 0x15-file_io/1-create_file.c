@@ -10,7 +10,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t wrt;
+	int wrt;
 	int file_d;
 	int i = 0;
 
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content == NULL)
-		text_content = " ";
+		text_content = "";
 
 	while (text_content[i] != '\0')
 	{
