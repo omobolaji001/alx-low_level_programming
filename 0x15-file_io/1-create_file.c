@@ -28,7 +28,7 @@ int create_file(const char *filename, char *text_content)
 	for (i = 0; text_content[i]; i++)
 		;
 
-	wrt = write(file_d, text_content, 1);
+	wrt = write(file_d, text_content, i);
 	
 
 	if (wrt == -1)
