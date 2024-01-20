@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * jump_search - Searches for a value in a sorted array of integers, using 
+ * jump_search - Searches for a value in a sorted array of integers, using
  * the Jump Search Algorithm.
  * @array: Pointer to the first element of the array to search in.
  * @size: Number of elements in the array.
@@ -32,6 +32,6 @@ int jump_search(int *array, size_t size, int value)
 		if (array[first] == value)
 			return (first);
 	}
-	
+
 	return (-1);
 }
